@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="WLb~}#:g0mmGs9G)@G31">Player</variable><variable type="KIND_SpriteKind" id="7n]Ue$i,!j1%t{|/-*$d">Projectile</variable><variable type="KIND_SpriteKind" id="[+y_2y{NbBjd?vkq4Q$F">Food</variable><variable type="KIND_SpriteKind" id="/~4J3u?}#|l/0|rs`g_3">Enemy</variable><variable id="T#Tu:Wz5O3,c*Frz^[w,">mySprite</variable><variable id="%7k]o1%]7Hw9kyzfiL42">randomSprite</variable><variable id="i#d1%8cyewS.F.#D,Z6=">rocky</variable></variables><block type="pxt-on-start" x="130" y="30"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">13</field></shadow></value><next><block type="variables_set"><field name="VAR" id="%7k]o1%]7Hw9kyzfiL42">randomSprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . f 9 f . . . . . . 
+. . . . . . . . f . . . . . . . 
+. . . . f . . 1 1 1 . . f . . . 
+. . . f 9 1 f f f f f 1 9 f . . 
+. . . . 1 f f f f f f f 1 . . . 
+. f . . f f 1 5 f 5 1 f f . . f 
+. 9 f f f f 9 5 f 5 9 f f f f 9 
+. f . . f f f f f f f f f . . f 
+. . . . f f 9 9 9 9 9 f f . . . 
+. . . . 1 f f f f f f f 1 . . . 
+. . . f 9 1 f f f f f 1 9 f . . 
+. . . . f . . . f . . . f . . . 
+. . . . . . . . f . . . . . . . 
+. . . . . . . f 9 f . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="%7k]o1%]7Hw9kyzfiL42">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">82</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">44</field></shadow></value><next><block type="variables_set"><field name="VAR" id="i#d1%8cyewS.F.#D,Z6=">rocky</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . f . . . . . . . . 
+. . . . . . f e f . . . . . . . 
+. . . . . f e e e f . . . . . . 
+. . . . f e e e e e f . . . . . 
+. . . f e 1 f e f 1 e f . . . . 
+. . f e e e e e e e e e f . . . 
+. f e e e e f f f e e e e f . . 
+. f e e e e e e e e e e e f . . 
+. f f f f f f f f f f f f f . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">This is my rocky game</field></shadow></value><next><block type="gamecountdown"><value name="duration"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" x="186" y="403"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="i#d1%8cyewS.F.#D,Z6=">rocky</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="%7k]o1%]7Hw9kyzfiL42">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block><block type="spritesoverlap" x="130" y="590"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><statement name="HANDLER"><block type="gameOver"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose"><field name="win">true</field></shadow></value><next><block type="gamestopcountdown"/></next></block></statement></block></xml>
